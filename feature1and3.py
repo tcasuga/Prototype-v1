@@ -68,7 +68,7 @@ if st.session_state.tips:
     st.write(st.session_state.tips)
 
     st.write("### Translate Tips")
-    target_language = st.radio("Select Target Language", ["French", "German", "English"])
+    target_language = st.radio("Select Target Language", ["Spanish", "Chinese", "Vietnamese"])
 
     if st.button("Translate Tips"):
         st.session_state.translated_tips = translate(st.session_state.tips, target_language=target_language)
