@@ -19,7 +19,7 @@ def get_completion(prompt, model="gpt-3.5-turbo"):
     )
     return completion.choices[0].message.content
 
-def translate(text, target_language="French"):
+def translate(text, target_language="Spanish"):
     translation_prompt = f"Translate the following text to {target_language}:\n{text}"
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
